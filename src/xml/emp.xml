@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<emps>
+	<emp empId="1">
+		<empName>jack</empName>
+		<salary>5300.0</salary>
+	</emp>
+	<emp empId="2">
+		<empName>lily</empName>
+		<salary>5300.0</salary>
+	</emp>
+</emps>

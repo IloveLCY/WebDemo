@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<beans>
+	<bean id="empBiz" class="com.geminno.biz.impl.EmpBizImpl">
+		<property name="empDAO" ref="empDAO"/>
+	</bean>
+	<bean id="deptBiz" class="com.geminno.biz.impl.DeptBizImpl">
+		<property name="deptDAO" ref="deptDAO"/>
+	</bean>
+	<bean id="deptDAO" class="com.geminno.dao.impl.DeptDAOImpl"/>
+	<bean id="empDAO" class="com.geminno.dao.impl.EmpDAOImpl"/>
+</beans>

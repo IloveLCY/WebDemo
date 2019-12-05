@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	
+	<!-- struts2常用常量 -->
+	<!-- 字符编码 -->
+	<constant name="struts.i18n.encoding" value="utf-8"></constant>
+	<!-- 动态方法支持 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+	<!-- action后缀 -->
+	<constant name="struts.action.extension" value="do,action,,"/>
+	<!-- url: /命名空间/action1 -->
+	
+	<package name="empAction" namespace="/empAction" extends="struts-default">
+		<action name="empAction_*" class="com.geminno.action.EmpAction" method="{1}">
+			<result name="tomain">/main.jsp</result>
+			<result name="addemp" type="chain" >empAction_toaddemp</result>
+			<result name="toaddemp">/addEmp.jsp</result>
+			<result name="tomodifyemp">/modifyEmp.jsp</result>
+			<result name="modifyemp" type="chain">empAction_tomodifyemp</result>
+			<result name="todeleteemp" >/deleteEmp.jsp</result>
+		</action>
+	</package>
+</struts>

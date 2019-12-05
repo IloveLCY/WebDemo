@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<actions>
+	<action path="/empaction" class="com.geminno.action.EmpAction"/>
+</actions>

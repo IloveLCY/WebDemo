@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<class className="com.geminno.pojo.Dept" tableName="dept">
+	<id name="deptId" column="deptId" generator="increment"/>
+	<property name="deptName" column="deptName"/>
+</class>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<classes>
+	<class className="com.geminno.pojo.Emp" tableName="emp">
+		<id name="empId" column="empId" generator="uuid"/>
+		<property name="empNo" column="empNo"/>
+		<property name="empName" column="empName"/>
+		<property name="sex" column="sex"/>
+		<property name="salary" column="salary"/>
+		<property name="birthday" column="birthday"/>
+		<property name="dept" refClass="com.geminno.pojo.Dept" column="deptId"/>
+	</class>
+	<class className="com.geminno.pojo.Dept" tableName="dept">
+		<id name="deptId" column="deptId" generator="increment"/>
+		<property name="deptName" column="deptName"/>
+	</class>
+</classes>
